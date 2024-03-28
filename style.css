@@ -4,13 +4,12 @@ body {
   font-family:'Trebuchet MS';
   
 }
-
 header {
   background-color: #2FDB24;
 }
+
 h1 {
   color: rgb(10, 92, 10);
-  opacity: 0.6;
   padding: 20px;
   margin-bottom: 0px;
   text-align: center;
