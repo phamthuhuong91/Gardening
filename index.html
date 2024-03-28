@@ -10,13 +10,57 @@
   </head>
 
   <body>
-    <header>
+    <header id = "header_color">
       <h1>Introduction</h1>
       <nav>
-        <a href="https://phamthuhuong91.github.io/reading-notes/">Link</a>
-        <a href="https://phamthuhuong91.github.io/reading-notes/102/lab1">Link</a>
+        <a href="https://phamthuhuong91.github.io/reading-notes/">The Science</a>
+        <a href="https://phamthuhuong91.github.io/reading-notes/102/lab1">Herbs</a>
+        <a href="https://phamthuhuong91.github.io/reading-notes/102/lab1">Vegetables and Fruits</a>
+        <a href="https://phamthuhuong91.github.io/reading-notes/102/lab1">Flowers</a>
       </nav>
     </header>
+
+    <p style='text-align:right;' id="date"></p>
+
+    <script>
+      const d = new Date();
+      document.getElementById("date").innerHTML = d;
+    </script>
+    
+    <b><p style='text-align:center; font-size:larger;color:red;' id ='demo'></p></b>
+
+    <script>
+      var hour = new Date().getHours();
+      let greetings;
+      if (hour < 10) {
+        greetings = 'Good morning!';
+      } else if (hour < 19 ) {
+        greetings = 'Good day!';
+      } else {
+        greetings = 'Good evening!';
+      }
+      document.getElementById('demo').innerHTML = greetings;    
+    </script>
+  
+  <div class="cell text">
+    Header Background Color Picker:
+</div>
+<div class="cell js">
+    <input type="color" id="color_value" name="color_value" value="white">
+    <!---DOUBLE (1 COLOR BOX 1 BUTTON)-->
+    <button type="button" onclick="changeBackground()">Set Color</button>
+    <button onclick="document.getElementById('header_color').style.backgroundColor='#2FDB24'">Reset</button>
+    </button>
+</div>
+
+<script>
+  function changeBackground(){
+  let color = document.getElementById('color_value').value;
+  document.getElementById('header_color').style.backgroundColor = color;
+}
+</script>
+
+<br>
 
     <main>
         <img  class="fit-picture"
@@ -25,7 +69,7 @@
             
       <p>This is my note for a backyard garden. It also serves as a practice for lab 102 as well.</p>
       <p>Part of the website will cover about soil science and appropriate plant. The applied sciences that underline sustainable landscaping and gardening are young and evolving, resulting in new approaches that spark vigorous debate among experts and gardeners alike.</p>
-      <p> The other part will focus on specific herbs, fruits, vegetables and flowers that I want include in my backyard garden. </p>  
+      <p> The other parts will focus on specific herbs, fruits, vegetables and flowers that I want include in my backyard garden. </p>  
 
       <section>
         <h2>The Science</h2>
@@ -44,12 +88,12 @@
 
       <section>
         <h2>The Vegetables and Fruits</h2>
-        <p>Place holder</p>
+        <p>This comprehensive guide covers how to start a vegetable garden from scratch, which vegetables to grow, and when to plant what. I added a “starter” garden plan consisting of easy-to-grow vegetables, companion planting techniques! Let this year be the year that you grow a successful garden!</p>
       </section>
 
       <section>
         <h2>The Flowers</h2>
-        <p>Place holder</p>
+        <p>Flowers have been symbols of beauty in most civilizations of the world, and flower giving is still among the most popular of social amenities. As gifts, flowers serve as expressions of affection for spouses, other family members, and friends; as decorations at weddings and other ceremonies; as tokens of respect for the deceased; as cheering gifts to the bedridden; and as expressions of thanks or appreciation.</p>
       </section>
     </main>
 
