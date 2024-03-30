@@ -22,27 +22,32 @@
 
     <p style='text-align:right;' id="date"></p>
 
-    <script>
-      const d = new Date();
-      document.getElementById("date").innerHTML = d;
-    </script>
-    
-    <b><p style='text-align:center; font-size:larger;color:red;' id ='demo'></p></b>
+    <b><p style='text-align:center; font-size:larger;color:red;' id ='greetings'></p></b>
 
-    <script>
-      var hour = new Date().getHours();
-      let greetings;
+    <script> 
+    const d = new Date();
+    document.getElementById("date").innerHTML = d;
+
+    var hour = new Date().getHours();
+    let greetings;
       if (hour < 10) {
-        greetings = 'Good morning!';
+         greetings = 'Good morning!';
       } else if (hour < 19 ) {
         greetings = 'Good day!';
       } else {
         greetings = 'Good evening!';
       }
-      document.getElementById('demo').innerHTML = greetings;    
+    document.getElementById("greetings").innerHTML = greetings;    
     </script>
-  
-  <div class="cell text">
+
+    <div style="text-align: center;" id ="rating">
+      <button onclick="rating()">Rating</button>
+    </div>
+
+    <p id="rating"></p>
+    <p style="text-align: center;" id="rating_notes"></p>
+
+    <div class="cell text">
     Header Background Color Picker:
 </div>
 <div class="cell js">
