@@ -27,13 +27,16 @@
     <p id="q_name" style="color:black; background-color: gray;">Question 1: What is your name?</p>
     <p id="q_food" style="color:blue; background-color: aqua;">Question 2: What is your favourite food?</p>
     <p id="q_country" style="color:red; background-color:pink;">Question 3: Where is your hometown?</p>
-    <p id="q_rating" style="color:purple; background-color: plum;">Question 4: What start rating would you like to give?</p>
+    <p id="q_rating" style="color:purple; background-color: plum;">Question 4: What start rating would you like to give? (Click Rating button below)</p>
 
     <p style='text-align:right;' id="date"></p>
     <b><p style='text-align:center; font-size:larger;color:red;' id ='greetings'></p></b>
     <p style="text-align: center;" id="rating"></p>
     <p style="text-align: center;" id="rating_notes"></p>
 
+    <button style="margin:auto; display:block;"type="button" id="button" onclick="rating()">Rating</button>
+    <br>
+    
     <script>
       let name = prompt("What is your name?");
       let food = prompt("What is your favourite food?");
@@ -53,20 +56,6 @@
         greetings = "Good evening, "+name+"! .I also like to eat "+food+" in "+country;
         }
     document.getElementById("greetings").innerHTML = greetings;
-
-    let i =1;
-    let text = "";
-    let number = prompt("What star rating would you like to give, 1-5?");
-      while (!(number>=1 && number <=5)) {
-        number = prompt("Invalid! What star rating would you like to give,1-5?")
-      }
-      document.getElementById("rating").innerHTML="You rated the page with "+number+" star(s).Thank you!";
-
-      while (i<=number) {
-        text += "&#127799";
-        i++;
-      }
-      document.getElementById("rating_notes").innerHTML=text;
 
     </script>
 
