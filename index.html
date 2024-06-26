@@ -6,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Gardening Notebook</title>
     <link rel="stylesheet" href="./style.css">
-    <style>
-      h1 {
-        background-color: linen;
-      }
-    </style>
   </head>
 
   <body>
@@ -23,81 +18,16 @@
         <a href="https://phamthuhuong91.github.io/reading-notes/102/lab1">Flowers</a>
       </nav>
     </header>
-  
-    <p id="q_name" style="color:black; background-color: gray;">Question 1: What is your name?</p>
-    <p id="q_food" style="color:blue; background-color: aqua;">Question 2: What is your favourite food?</p>
-    <p id="q_country" style="color:red; background-color:pink;">Question 3: Where is your hometown?</p>
-    <p id="q_rating" style="color:purple; background-color: plum;">Question 4: What start rating would you like to give? (Click Rating button below)</p>
-
-    <p style='text-align:right;' id="date"></p>
-    <b><p style='text-align:center; font-size:larger;color:red;' id ='greetings'></p></b>
-    <p style="text-align: center;" id="rating"></p>
-    <p style="text-align: center;" id="rating_notes"></p>
-
-    <button style="margin:auto; display:block;"type="button" id="button" onclick="rating()">Rating</button>
-    <br>
-    
-    <script>
-      let name = prompt("What is your name?");
-      let food = prompt("What is your favourite food?");
-      let country = prompt("Where is your home town?")
-      
-      alert("Hello "+name+"! I also like to eat "+food+" in "+country);
-      
-      const d = new Date();
-      document.getElementById("date").innerHTML = d;
-      var hour = new Date().getHours();
-      let greetings;
-        if (hour < 10) {
-         greetings = "Good morning, "+name+"! I also like to eat "+food+" in "+country;
-        } else if (hour < 19 ) {
-        greetings = "Good day, "+name+"! I also like to eat "+food+" in "+country;
-        } else {
-        greetings = "Good evening, "+name+"! .I also like to eat "+food+" in "+country;
-        }
-    document.getElementById("greetings").innerHTML = greetings;
-    </script>
-
-    <script>
-      function rating() {
-        let i =1;
-        let text = "";
-        let number = prompt("What star rating would you like to give, 1-5?");
-          while (!(number>=1 && number <=5)) {
-          number = prompt("Invalid! What star rating would you like to give,1-5?")
-          }
-        document.getElementById("rating").innerHTML="You rated the page with "+number+" star(s).Thank you!";
-
-        while (i<=number) {
-          text += "&#127799";
-          i++;
-          }
-        document.getElementById("rating_notes").innerHTML=text;
-}
-    </script>
-
-    <div class="cell text">
-    Header Background Color Picker:
-    </div>
-    
-    <div class="cell js">
-      <input type="color" id="color_value" name="color_value" value="black">
-      <!---DOUBLE (1 COLOR BOX 1 BUTTON)-->
-      <button type="button" onclick="changeBackground()">Set Color</button>
-      <button onclick="document.getElementById('header_color').style.backgroundColor='#2FDB24'">Reset</button>
-      </button>
-    </div>
 
 <script src="java.js"></script>
-<br>
 
     <main>
-      <h1> Class 1 Lab </h1>
+      <h1> My Gardening Notebooks </h1>
         <img  class="fit-picture"
             src="Introduction-Image01.jpg"
             alt="Backyard Garden"/>  
             
-      <p>This is my note for a backyard garden. It also serves as a practice for lab 102 and 201 as well.</p>
+      <p>This is my note for a backyard garden.</p>
       <p>Part of the website will cover about soil science and appropriate plant. The applied sciences that underline sustainable landscaping and gardening are young and evolving, resulting in new approaches that spark vigorous debate among experts and gardeners alike.</p>
       <p> The other parts will focus on specific herbs, fruits, vegetables and flowers that I want include in my backyard garden. </p>  
 
