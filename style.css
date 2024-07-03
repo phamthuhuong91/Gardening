@@ -6,7 +6,7 @@
 }
 
 body {
-  margin-left:15%;
+  margin-left:10%;
   margin-right:5%;
   font-family:'Lora',Georgia,serif; 
 }
@@ -15,6 +15,7 @@ header {
 }
 
 h1, h2, h3, h4, h5 {
+  text-align: center;
   letter-spacing: 0em;
 	color: #181616;
 	margin-top: 1.125rem;
@@ -51,6 +52,38 @@ nav a:hover {
 h3 {
   border-bottom: 0.5px dashed green;
   color: #2FDB24;
+}
+
+.column {
+  width: 32%;
+  float: left;
+  margin:0.5%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.custom-select {
+  min-width: 350px;
+}
+
+select {
+  appearance: none;
+  /* safari */
+  -webkit-appearance: none;
+  /* other styles for aesthetics */
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+  font-family:'Lora',Georgia,serif; 
 }
 
 footer {

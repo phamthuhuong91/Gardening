@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -23,8 +22,6 @@
       </nav>
     </header>
 
-<script src="java.js"></script>
-
     <main>
       <h2> Growing Guides </h2>
         <img  class="fit-picture"
@@ -34,7 +31,7 @@
       <p>This is my note for a backyard garden.</p>
       <p>Part of the website will cover about soil science and appropriate plant. The applied sciences that underline sustainable landscaping and gardening are young and evolving, resulting in new approaches that spark vigorous debate among experts and gardeners alike.</p>
       <p> The other parts will focus on specific herbs, fruits, vegetables and flowers that I want include in my backyard garden. </p> 
-      <p>In each Plant Growing Guide, I identified <b>sun exposure</b>, <b>soil type</b>, <b>soil pH</b>, hardiness zones, pests and problems, harvesting tips, recommended varieties, and additional features. </p>
+      <p>In each Plant Growing Guide, I identified <b>sun exposure</b>, <b>soil condition</b>, hardiness zones, pests and problems, harvesting tips, recommended varieties, and additional features. </p>
 
       <section>
         <h3>The Science</h3>
@@ -46,25 +43,47 @@
         </ul>
       </section>
 
-      <section>
-        <h3>The Herbs</h3>
-        <p>As a cook, herbs are my best friends. A pinch of crushed rosemary can light up a beef pasta sauce. Spring rolls could not be completed with mint, thai basil and chives. Fresh dill will bring the best out of steamed fish.</p>
+      <img>
+
+      <div class="row">
+        <section class="column">
+          <h3>The Herbs</h3>
+          <select id="herbs" onchange="myFunction1()">
+            <option value="">Choose Herb</option>
+            <option value="mint">Mint</option>
+            <option value="oregano">Oregano</option>
+          </select>
+          <p id="col1"></p>
+          <p id="note1">As a cook, herbs are my best friends. A pinch of crushed rosemary can light up a beef pasta sauce. Spring rolls could not be completed with mint, thai basil and chives. Fresh dill will bring the best out of steamed fish.</p>
       </section>
 
-      <section>
-        <h3>The Vegetables and Fruits</h3>
-        <p>This comprehensive guide covers how to start a vegetable garden from scratch, which vegetables to grow, and when to plant what. I added a “starter” garden plan consisting of easy-to-grow vegetables, companion planting techniques! Let this year be the year that you grow a successful garden!</p>
-      </section>
+        <section class="column">
+          <h3>The Vegetables and Fruits</h3>
+          <select id="veggie" onchange="myFunction2()">
+            <option value="">Choose Veggie/Fruit</option>
+            <option value="tomato">Tomato</option>
+          </select>
+          <p id="col2"></p>
+          <p id="note2">This comprehensive guide covers how to start a vegetable garden from scratch, which vegetables to grow, and when to plant what. I added a “starter” garden plan consisting of easy-to-grow vegetables, companion planting techniques! Let this year be the year that you grow a successful garden!</p>
+        </section>
 
-      <section>
-        <h3>The Flowers</h3>
-        <p>Flowers have been symbols of beauty in most civilizations of the world, and flower giving is still among the most popular of social amenities. As gifts, flowers serve as expressions of affection for spouses, other family members, and friends; as decorations at weddings and other ceremonies; as tokens of respect for the deceased; as cheering gifts to the bedridden; and as expressions of thanks or appreciation.</p>
-      </section>
+        <section class="column">
+          <h3>The Flowers</h3>
+          <select id="flower" onchange="myFunction3()">
+            <option value="">Choose Flower</option>
+            <option value="rose">Rose</option>
+          </select>
+          <p id="col3"></p>
+          <p id="note3">Flowers have been symbols of beauty in most civilizations of the world, and flower giving is still among the most popular of social amenities. As gifts, flowers serve as expressions of affection for spouses, other family members, and friends; as decorations at weddings and other ceremonies; as tokens of respect for the deceased; as cheering gifts to the bedridden; and as expressions of thanks or appreciation.</p>
+        </section>
+      </div>
     </main>
 
     <footer>
       <p>© 2024 HP </p>
     </footer>
+  
+    <script src="java.js"></script>
 	
   </body>
 
